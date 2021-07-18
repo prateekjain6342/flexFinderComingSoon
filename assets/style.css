@@ -3,6 +3,7 @@ body {
 }
 
 .container{
+    position: absolute;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -16,6 +17,7 @@ body {
     height: 100%;
     margin-left: 5%;
     margin-top: 5%;
+    bottom: 0;
 }
 
 .text {
@@ -31,7 +33,8 @@ body {
     font-size: 100px;
     font-family: 'Work Sans';
     font-weight: bold;
-    margin-bottom: auto;
+    margin-top: auto;
+    margin-bottom: 0;
 }
 
 .subtext {
@@ -61,7 +64,9 @@ body {
 
 .logo > img{
     width: 30%;
+    margin-bottom: auto;
     margin-top: auto;
+
 }
 
 .door {
@@ -75,4 +80,31 @@ body {
 .door > img{
    width: 100%;
    height: auto;
+   margin-top: auto;
+}
+
+@media (max-width: 1090px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr;
+        grid-template-areas: 
+        "text text"
+        "subtext subtext"
+        "logo door"
+        ;
+    }
+
+    .text > p{
+        margin-bottom: auto;
+    }
+
+    .subtext >p{
+        margin-bottom: auto;
+    }
+
+    .door > img{
+        width: 50%;
+        height: auto;
+    }
 }
