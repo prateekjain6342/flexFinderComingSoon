@@ -1,0 +1,71 @@
+
+
+.container {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    background-image: url(./desktopBanner.jpeg);
+    height: 100%;
+    width: 100%;
+    grid-template-areas:
+    "main-text main-text"
+    "sub-text sub-text"
+    "logo logo"
+    ;
+    overflow: hidden;
+}
+
+.coming-soon{
+    color: #fdd935;
+    font-family: 'Work Sans';
+    font-weight: bold;
+    font-size: 132px;
+    grid-area: main-text;
+    line-height: 95%;
+    margin-left:5%;
+    margin-top: 5%;
+    width: 55%;
+}
+
+.sub-text {
+    font-size: 36px;
+    color: #ffffff;
+    font-family: 'Work Sans';
+    grid-area: sub-text;
+    margin-left:5%;
+    margin-top: -3%;
+    width: 50%;
+}
+
+.logo {
+    grid-area: logo;
+    margin-top: auto;
+    margin-left:5%;
+    margin-bottom: 10%;
+    width: 20%;
+    height: auto;
+}
+
+@media (max-width: 360px) {
+    .container {
+        background-image: url(./mobileBanner.jpeg);
+    }
+    .coming-soon {
+        font-size: 32px;
+    }
+    .sub-text {
+        font-size: 12px;
+        margin-top: -25%;
+        
+    }
+
+    .logo {
+        margin-bottom: auto;
+        margin-top: -50%;
+        width: 30%;
+    }
+}
