@@ -87,7 +87,7 @@ body {
     .container{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.1fr 0.1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 0.1fr 1fr 1fr;
         grid-template-areas: 
         "text text"
         "subtext subtext"
@@ -95,6 +95,10 @@ body {
         "door door"
         ;
         height: 100%;
+    }
+
+    .text{
+
     }
 
     .text > p{
