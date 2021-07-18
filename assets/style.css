@@ -20,25 +20,27 @@
 }
 
 .coming-soon{
+    grid-area: main-text;
+    width: 55%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.coming-soon > h1{
     color: #fdd935;
     font-family: 'Work Sans';
     font-weight: bold;
     font-size: 132px;
-    grid-area: main-text;
     line-height: 95%;
-    margin-left:5%;
-    margin-top: 5%;
-    width: 55%;
+    margin-top: auto;
 }
 
-.sub-text {
+.coming-soon > p{
     font-size: 36px;
     color: #ffffff;
     font-family: 'Work Sans';
     grid-area: sub-text;
-    margin-left:5%;
-    margin-top: -3%;
-    width: 50%;
+    margin-top: -5%;
 }
 
 .logo {
@@ -50,16 +52,16 @@
     height: auto;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 650px) {
     .container {
         background-image: url(./mobileBanner.jpeg);
+        width: 100%;
     }
     .coming-soon {
         font-size: 32px;
     }
     .sub-text {
         font-size: 12px;
-        margin-top: -25%;
         
     }
 
